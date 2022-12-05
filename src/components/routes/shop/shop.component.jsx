@@ -8,6 +8,7 @@ import Category from "../category/category.component";
 import { getCategoriesAndDocuments } from "../../../utils/firebase/firebase.utils";
 import {
   fetchCategoriesAsync,
+  fetchCategoriesStart,
   setCategories,
 } from "../../../store/categories/category.action";
 
@@ -20,7 +21,7 @@ const Shop = () => {
     //   dispatch(setCategories(categoriesArray));
     // };
     // getCategoriesMap();
-    dispatch(fetchCategoriesAsync());
+    dispatch(fetchCategoriesStart());
   }, []);
 
   return (
