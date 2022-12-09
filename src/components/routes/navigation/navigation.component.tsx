@@ -13,7 +13,7 @@ import {
   NavigationContainer,
   NavLink,
   NavLinks,
-} from "./navigation.styles.jsx";
+} from "./navigation.styles.js";
 import { signOutStart } from "../../../store/user/user.action";
 
 const Navigation = () => {
